@@ -6,55 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign-up Form</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
         <div class="splashImgContainer">
-            <!-- Add the image and logo text here -->
+            <div class="brandContainer">
+                <p>Unbranded!</p>
+            </div>
+            <p class="imgCredit">Irrelevant image from the public domain.</p>
         </div>
-        <div class="textContentContainer">
-            <div class="headerTextBlock">
-                <h1>This is not a real online service! Nothing will happen if you fill this out. We're not offering anything of value. Please don't fill out this form.</h1>
+        <div class="contentContainer">
+            <div class="textInstructionsContainer">
+                <div class="headerTextBlock">
+                    <p>This is not a real online service! Nothing will happen if you fill this out. We're not offering anything of value. Please don't fill out this form.</p>
+                </div>
+            </div>
+
+            <div class="formContainer">
+                <p>Let's do this!</p>
+
+                <form action="">
+                    <div class="formRow">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname">
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+
+                    <div class="formRow">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="formRow">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="
+                    confirmPassword">
+                    </div>
+
+                    <button type="submit" class="submitBtn">Create Account</button>
+                </form>
+
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
-
-        <div class="formContainer">
-            <h1>Let's do this!</h1>
-
-            <form action="">
-                <div class="formRow">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname">
-
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname">
-                </div>
-
-                <div class="formRow">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="phone"></label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-
-                <div class="formRow">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="
-                    confirmPassword">
-                </div>
-
-                <button type="submit" class="submitBtn">Create Account</button>
-            </form>
-
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
-
     </div>
 </body>
 
