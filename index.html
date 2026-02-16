@@ -23,46 +23,55 @@
             <p class="imgCredit">Irrelevant image from the public domain.</p>
         </div>
         <div class="contentContainer">
-            <div class="textInstructionsContainer">
-                <div class="headerTextBlock">
-                    <p>This is not a real online service! Nothing will happen if you fill this out. We're not offering anything of value. Please don't fill out this form.</p>
+            <p>This is not a real online service! Nothing will happen if you fill this out. We're not offering anything of value. Please don't fill out this form.</p>
+
+            <form action="">
+                <div class="formContainer">
+                    <p>Let's do this!</p>
+
+                    <div class="formRow">
+                        <div class="formCell">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+
+                        <div class="formCell">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                    </div>
+
+                    <div class="formRow">
+                        <div class="formCell">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="formCell">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="formRow">
+                        <div class="formCell">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+
+                        <div class="formCell">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword">
+                        </div>
+                    </div>
+
                 </div>
-            </div>
 
-            <div class="formContainer">
-                <p>Let's do this!</p>
+                <button type="submit" class="submitBtn">Create Account</button>
+            </form>
 
-                <form action="">
-                    <div class="formRow">
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname">
+            <p>Already have an account? <a href="#">Log in</a></p>
 
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" name="lastname">
-                    </div>
-
-                    <div class="formRow">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-
-                    <div class="formRow">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="
-                    confirmPassword">
-                    </div>
-
-                    <button type="submit" class="submitBtn">Create Account</button>
-                </form>
-
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </div>
         </div>
     </div>
 </body>
