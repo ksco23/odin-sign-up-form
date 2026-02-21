@@ -101,11 +101,16 @@ label {
 input {
     border: 1px solid #E5E7EB;
     width: max(100%, 200px);
+    font-size: 1.1rem;
 }
 
 input:focus {
     outline: 2px solid #5681ff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #FF0000;
 }
 
 .formRow {
@@ -122,5 +127,34 @@ input:focus {
 
 .formCell label {
     display: block;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
+}
+
+.loginText,
+.submitBtn {
+    font-size: 1rem;
+}
+
+.loginText a {
+    text-decoration: none;
+    color: #137800;
+}
+
+.loginText a:hover {
+    text-decoration: underline;
+    color: #0c5000;
+}
+
+.submitBtn {
+    font-weight: bold;
+    color: #000000;
+    background-color: #9dff8b;
+    padding: 10px 30px;
+    border: 1px solid #06b935;
+    border-radius: 5px;
+}
+
+.submitBtn:hover {
+    background-color: #6fdb5c;
+    cursor: pointer;
 }

@@ -27,7 +27,7 @@
 
             <form action="">
                 <div class="formContainer">
-                    <p>Let's do this!</p>
+                    <p>Let's do this! (But, seriously, don't do it!)</p>
 
                     <div class="formRow">
                         <div class="formCell">
@@ -56,12 +56,12 @@
                     <div class="formRow">
                         <div class="formCell">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required minlength="6">
                         </div>
 
                         <div class="formCell">
                             <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
                 <button type="submit" class="submitBtn">Create Account</button>
             </form>
 
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <p class="loginText">Already have an account? <a href="#">Log in</a></p>
 
         </div>
     </div>
